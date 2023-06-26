@@ -72,4 +72,7 @@ maximum-cache-ttl 5400
 	1. brew install awscli
 18. azure-cli
 	1. brew install azure-cli
-	2. 
+19. create `~/bin` for scripts
+	1. add to `~/.bash_profile`
+	2. create `upd.sh`
+	3. 
