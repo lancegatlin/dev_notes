@@ -13,3 +13,12 @@ Following works to set SSH key per-repo
 ```
 git config core.sshCommand "ssh -i ~/.ssh/id_rsa_example -F /dev/null"
 ```
+
+### git with PAT
+
+https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/creating-and-using-a-git-pat
+
+To enable keychain storing of PAT after first login
+```
+git config --global credential.helper osxkeychain
+```
