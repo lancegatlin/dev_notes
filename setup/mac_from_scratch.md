@@ -5,7 +5,11 @@
 	3. Turn off mission control "Automatically rearrange" setting
 	4. Turn on "switch to a Space with open windows"
 	5. Change "move focus to active or next window" from ctrl-F4 to ctrl-cmd-tab
-2. bash
+2. in Mac Finder app, add "computer" and user home directory in settings
+3. always show hidden files:
+	4. `defaults write com.apple.Finder AppleShowAllFiles true`
+	5. `killall Finder`
+4. bash
 	1. set history to 1000
 	2. 
 	
