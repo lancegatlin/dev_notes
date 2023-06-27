@@ -48,7 +48,7 @@
 			1. edit `~/.gnupg/gpg-agent.conf`:
 ```
 default-cache-ttl 5400
-maximum-cache-ttl 5400
+max-cache-ttl 5400
 ```
 	2. brew install pass
 		1. init password store: `pass init <hex id>`
