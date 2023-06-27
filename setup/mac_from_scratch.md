@@ -9,7 +9,7 @@
 3. always show hidden files:
 	4. `defaults write com.apple.Finder AppleShowAllFiles true`
 	5. `killall Finder`
-4. bash
+5. bash
 	1. set history to 1000
 	2. 
 	
@@ -27,7 +27,8 @@
 	1. brew install iterm2
 	2. brew tap homebrew/cask-fonts && brew install --cask font-source-code-pro
 	3. import homebrew terminal colors (green)
-	4. set iTerm history to 10000
+	5. set iTerm history to 10000
+	6. in Finder change default open with to iTerm (create a script then right click -> Get Info -> Open with)
 6. Sublime
 	1. https://www.sublimetext.com/3
 7. Obsidian
