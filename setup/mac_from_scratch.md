@@ -9,6 +9,7 @@
 3. always show hidden files:
 	4. `defaults write com.apple.Finder AppleShowAllFiles true`
 	5. `killall Finder`
+4. Settings -> Control Center -> Bluetooth -> 'Show in Menu Bar'
 5. bash
 	1. set history to 1000
 	2. 
