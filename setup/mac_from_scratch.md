@@ -81,4 +81,6 @@ max-cache-ttl 5400
 19. create `~/bin` for scripts
 	1. add to `~/.bash_profile`
 	2. create `upd.sh`
-	3. 
+20. yq/jq
+	1. brew install yq jq
+21. 
