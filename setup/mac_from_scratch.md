@@ -74,13 +74,19 @@ max-cache-ttl 5400
 	2. brew install docker-compose
 	3. install docker desktop
 		1. https://www.docker.com/products/docker-desktop/
-17. awscli
-	1. brew install awscli
-18. azure-cli
-	1. brew install azure-cli
+17. 
 19. create `~/bin` for scripts
 	1. add to `~/.bash_profile`
 	2. create `upd.sh`
 20. yq/jq
 	1. brew install yq jq
-21. 
+21. install python/pip
+	1. brew install python
+22. aws
+	1. awscli
+	1. brew install awscli
+	2. install localstack (as needed)
+		1. brew install localstack/tap/localstack-cli
+		2. pip3 install awscli-local
+24. azure-cli
+	1. brew install azure-cli
