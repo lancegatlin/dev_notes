@@ -11,7 +11,7 @@
 - Standards
 	- Official team standards can be excellent
 		- but agreement is difficult and time consuming
-		- too many rules can become burdensome and brittle
+		- [x] too many rules can become burdensome and brittle
 	- Defacto standards that occur organically are better
 		- though this can create anti-productive competing standards
 		- can get stuck repeating code patterns that could be better

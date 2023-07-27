@@ -8,3 +8,4 @@ awslocal kinesis get-records --shard-iterator AAAAAAAAAAFjOlj2mOq3QpJypaular/3TR
 
 awslocal kinesis put-record --stream-name cat-onboarding-demo --partition-key 1 --data '{"value":"123"}'
 ```
+

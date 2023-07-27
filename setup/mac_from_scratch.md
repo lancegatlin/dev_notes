@@ -30,10 +30,22 @@
 	3. import homebrew terminal colors (green)
 	5. set iTerm history to 10000
 	6. in Finder change default open with to iTerm (create a script then right click -> Get Info -> Open with)
+	7. fix arrow nav hot keys
+		1. Go to settings (⌘ Command+,)
+		2. Go to tab Keys
+		3. Under "Key Bindings"
+		4. Change entry ⌘ Command← to Send Hex code: 0x01
+		5. Change entry ⌘ Command→ to Send Hex code: 0x05
+		6. Change entry option+left to escape-b
+		7. Change entry option+right to escape-f
+		8. Settings -> Profile -> Keys then remove profile key bindings for option-left/right
 6. Sublime
 	1. https://www.sublimetext.com/3
 7. Obsidian
 	1. https://obsidian.md/download
+	2. keymaps
+		1. cmd-l to search in all files (remove existing)
+		2. 
 8. Create new ssh key
 	1. ssh-keygen -t ed25519 -c "lance.gatlin@s-mach.net"
 	2. Register with github.com for lancegatlin
