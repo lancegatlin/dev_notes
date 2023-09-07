@@ -1,0 +1,1 @@
+In general I'm always happy to align my code submissions to the teams defacto standards. But I like to share my thoughts on why I do things the way I do to ensure I'm passing along what I know and also refining my own understanding. Please feel free to read or not read, respond or not respond.
