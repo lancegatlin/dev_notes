@@ -9,3 +9,11 @@ this setting has to be applied for each subproject -- because of the way common 
 
 `show scalacOptions` to view the current setting
 
+
+### SBT maximum compiler errors
+
+https://stackoverflow.com/questions/27493895/make-scala-compiler-stop-on-first-error
+
+```
+set Compile / maxErrors := 3
+```
