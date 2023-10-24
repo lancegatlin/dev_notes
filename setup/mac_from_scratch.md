@@ -83,6 +83,7 @@ max-cache-ttl 5400
 	4. keymap
 		1. Change Move Caret to Text Start to cmd-up (and remove others)
 		2. Change Move Caret to Text End to cmd-down (and remove others)
+		3. Change Show Type from 
 16. docker/compose
 	1. brew install docker
 	2. brew install docker-compose
