@@ -4,14 +4,15 @@ https://scalacheck.org/
 
 ## What does it do?
 
-- Property-based testing
-- Generator/Arbitrary typeclass
 - Fuzz testing framework
-  - random data 
-  - certain edge values (e.g. -1, 0, 1) more likely to be generated
-- Advanced
-	- test case minimization (using Shrink[T])
-	- Stateful Command testing
+	- random data 
+	- certain edge values (e.g. -1, 0, 1) more likely to be generated
+- Basic usage
+	- Property-based testing
+	- Generator/Arbitrary typeclass
+- Advanced usage
+	- test case minimization using Shrink[T] (https://github.com/typelevel/scalacheck/blob/main/doc/UserGuide.md#test-case-minimisation)
+	- Stateful Command testing (https://github.com/typelevel/scalacheck/blob/main/doc/UserGuide.md#stateful-testing)
 
 ## How to use it?
 
