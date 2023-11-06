@@ -1,0 +1,2 @@
+ScalaCheck 1.14.0 was just released with support for deterministic testing using seeds. Some folks have asked for examples, so I wanted to produce a Gist to help people use this feature.
+https://gist.github.com/non/aeef5824b3f681b9cfc141437b16b014
