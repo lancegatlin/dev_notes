@@ -8,7 +8,10 @@ https://scalacheck.org/
 - Generator/Arbitrary typeclass
 - Fuzz testing framework
   - random data 
-  - certain edge values (e.g. -1, 0, 1) more likely
+  - certain edge values (e.g. -1, 0, 1) more likely to be generated
+- Advanced
+	- test case minimization (using Shrink[T])
+	- Stateful Command testing
 
 ## How to use it?
 
