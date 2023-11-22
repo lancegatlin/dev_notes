@@ -92,6 +92,7 @@ Scastie (scala fiddle): https://scastie.scala-lang.org/MaSYRGQNRKS3pLaL4mNmVw
 4. generators are composable and reuseable
 5. enables allows property based testing (optional)
 6. fast test runs despite running test cases multiple times
+7. much easier to test/"protect" small trivial methods since input generators already exist to generate input data (vs need to write another fixed input again)
 
 
 ## Scalacheck Cons
@@ -154,6 +155,14 @@ Scastie (scala fiddle): https://scastie.scala-lang.org/RC5c3RdHSJaW0Z1G8fKkbg
 1. TwoMessageScenario satisfies the pre-condition that both messages have the same personId
 2. doesn't use suchThat just replaces data using copy in twoMessageScenarioGen
 
+### Best practices
+
+1. ScalaCheck is best for testing pure code (i.e. code has no side effects or async execution). It is especially helpful for testing serializers using a round trip of serializing generated data ensuring deserializing results in same data.
+	1. When using ScalaCheck to round trip test serializers be sure to still write at least once test that either directly deserializes or serializes a sample or other fixed expected result. This avoids subtle serializer bugs that might not show up in round trip test.
+2. Don't use `Gen.suchThat` (or any method that calls it such as `filter`). Instead just replace the data with a new generated value (e.g. in a case class using `copy` method)
+3. Use scenario pattern for more complicated test data
+4. It's ok if a generator can't be reused or needs to be duplicated since different tests will require different values (e.g. testing a serializer for a model vs testing business logic on the model)
+6. Prefer generated (i.e. random) data for local testing only. Avoid using random data in production environments (e.g. for smoke tests/deployment validators) since if there is a clean up bug it makes difficult to identify the source of the random data.
 
 ## Existing CAT code examples
 
