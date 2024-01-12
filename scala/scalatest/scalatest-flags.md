@@ -16,3 +16,9 @@ dockerComposeTest
        */
       testExecutionArgs := "-u target/junitxml -oFW",
 ```
+
+
+Run only certain tagged tests:
+```
+ft:testOnly -- -n com.cat.digital.tags.FunctionalTest
+```
