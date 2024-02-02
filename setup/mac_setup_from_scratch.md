@@ -1,15 +1,19 @@
 ### Setup
 1. Multi desktop
 	1. Add 15+ desktops
-	2. Enable desktop keyboard shortcuts
-	3. Turn off mission control "Automatically rearrange" setting
-	4. Turn on "switch to a Space with open windows"
-	5. Change "move focus to active or next window" from ctrl-F4 to ctrl-cmd-tab
+	3. Mission control
+		1. Turn off mission control "Automatically rearrange" setting
+		2. Turn on "switch to a Space with open windows"
+		3. Turn off all hot corners (`Hot Corners` button)
+	4. Keyboard shortcuts
+		1. Enable desktop keyboard shortcuts under Keyboard shortcuts -> Mission Control (expand down caret on left)
+		2. Change all "Switch to Desktop X" where X >= 10  to "shift-ctrl-X"
+		3. Change "move focus to active or next window" from ctrl-F4 to ctrl-cmd-tab under Keyboard Shortcuts -> Keyboard
 2. in Mac Finder app, add "computer" and user home directory in settings
 3. always show hidden files:
 	4. `defaults write com.apple.Finder AppleShowAllFiles true`
 	5. `killall Finder`
-4. Settings -> Control Center -> Bluetooth -> 'Show in Menu Bar'
+4. Settings -> Control Center -> Bluetooth -> 'Show in Menu Bar' (or search bluetooth)
 5. bash
 	1. set history to 1000
 	2. 
