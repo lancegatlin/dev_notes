@@ -30,30 +30,37 @@
 	1. brew install git
 5. iTerm2
 	1. brew install iterm2
-	2. brew tap homebrew/cask-fonts && brew install --cask font-source-code-pro
-	3. import homebrew terminal colors (green)
-	5. set iTerm history to 10000
-	6. in Finder change default open with to iTerm (create a script then right click -> Get Info -> Open with)
-	7. fix arrow nav hot keys
-		1. Go to settings (⌘ Command+,)
-		2. Go to tab Keys
-		3. Under "Key Bindings"
-		4. Change entry ⌘ Command← to Send Hex code: 0x01
-		5. Change entry ⌘ Command→ to Send Hex code: 0x05
-		6. Change entry option+left to escape-b
-		7. Change entry option+right to escape-f
-		8. Settings -> Profile -> Keys then remove profile key bindings for option-left/right
+	2. black/green color scheme
+		1. brew tap homebrew/cask-fonts && brew install --cask font-source-code-pro
+		2. download https://iterm2colorschemes.com homebrew scheme
+		3. Settings -> Profiles (Default) -> Colors
+			1. ClickbBottom right dropdown "Color Presets..."
+			2. import homebrew terminal colors (green)
+	3. Settings -> Profiles (default) -> Terminal -> Scrollback Buffer
+		1. set iTerm history to 10000
+	4. in Finder change default open with to iTerm (create a script then right click -> Get Info -> Open with)
+	5. fix arrow nav hot keys
+		3. Fix being/end of line nav
+			1. Under Settings -> General -> Keys -> Key Bindings
+				1. Change entry ⌘ Command← to Send Hex code: 0x01
+				2. Change entry ⌘ Command→ to Send Hex code: 0x05
+		4. Fix word nav
+			1. Remove existing: Settings -> Profiles -> Keys -> Key Mappings then remove profile key bindings for option-left/right (using minus sign)
+			2. [ ] Under Settings -> General -> Keys -> Key Bindings add:
+				1. Change entry option+left to escape-b 
+				2. Change entry option+right to escape-f
 6. Sublime
 	1. https://www.sublimetext.com/3
 7. Obsidian
 	1. https://obsidian.md/download
 	2. keymaps
-		1. cmd-l to search in all files (remove existing)
-		2. 
+		1. cmd-l to search in all files (remove existing) (todo:fix me)
 8. Create new ssh key
 	1. ssh-keygen -t ed25519 -c "lance.gatlin@s-mach.net"
 	2. Register with github.com for lancegatlin
-	3. To set SSH key per repo:  `git config core.sshCommand "ssh -i ~/.ssh/id_rsa_example -F /dev/null"`
+	3. Note: if possible generate NEW ssh key and add to lancegatlin and corp user
+		1. If using different SSH keys:
+			1. To set SSH key per repo:  `git config core.sshCommand "ssh -i ~/.ssh/id_rsa_example -F /dev/null"`
 9. Notes
 	1. clone dev_notes
 		1. git@github.com:lancegatlin/dev_notes.git
@@ -61,6 +68,9 @@
 10. install gpg/pass
 	1. brew install gpg
 		1. generate new key: `gpg --full-generate-key`
+			1. default kind of key (sign/encrypt)
+			2. default curve
+			3. default does not expire
 		2. set gpg cache timeout to 90 minutes
 			1. edit `~/.gnupg/gpg-agent.conf`:
 ```
@@ -68,16 +78,18 @@ default-cache-ttl 5400
 max-cache-ttl 5400
 ```
 	2. brew install pass
-		1. init password store: `pass init <hex id>`
+		1. init password store: `pass init <gpg key hex id>`
 11. sdkman
-	1. curl -s "https://get.sdkman.io" | bash
+	1. `curl -s "https://get.sdkman.io" | bash`
 12. jdk
-	1. sdk list java
-	2. sdk install java 11.0.2-open
+	1. `sdk list java`
+	2. `sdk install 11.0.22-zulu`
+		1. note: sbt doesn't work with Java >17 yet
+			1. https://stackoverflow.com/questions/76151072/error-during-sbt-launcher-java-lang-unsupportedoperationexception-the-security
 13. Scala 2/3
-	1. sdk install scala 2.13.11
+	1. `sdk install scala 2.13.11`
 14. sbt
-	1. sdk install sbt
+	1. `sdk install sbt`
 15. intellij
 	1. https://www.jetbrains.com/idea/download/?section=mac
 	2. scala plugin
@@ -87,7 +99,7 @@ max-cache-ttl 5400
 	4. keymap
 		1. Change Move Caret to Text Start to cmd-up (and remove others)
 		2. Change Move Caret to Text End to cmd-down (and remove others)
-		3. Change Show Type from 
+		3. Change Show Type from ctrl-shift-P to ctrl-F (?)
 16. docker/compose
 	1. brew install docker
 	2. brew install docker-compose
@@ -100,7 +112,7 @@ max-cache-ttl 5400
 19. yq/jq
 	1. brew install yq jq
 20. install python/pip
-	1. brew install python
+	1. brew install python (installs python3)
 21. aws
 	1. awscli
 	1. brew install awscli
