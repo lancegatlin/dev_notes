@@ -112,7 +112,10 @@ max-cache-ttl 5400
 19. yq/jq
 	1. brew install yq jq
 20. install python/pip
-	1. brew install python (installs python3)
+	1. download/install latest python (do NOT use brew)
+		1. https://www.python.org/downloads/macos/
+	2. pip3 install requests
+	3. pip3 install boto3
 21. aws
 	1. awscli
 	1. brew install awscli

@@ -22,3 +22,8 @@ To enable keychain storing of PAT after first login
 ```
 git config --global credential.helper osxkeychain
 ```
+
+checkout by date
+```
+git checkout 'master@{2024-04-18 00:00:00}'
+```
