@@ -1,3 +1,17 @@
+quick rebase
+```
+git fetch; git rebase origin/{defaultBranch} --autostash
+```
+
+
+manual git squash
+https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch
+```
+git reset $(git merge-base master $(git rev-parse --abbrev-ref HEAD))
+git commit -a -m "one commit on yourBranch"
+git push --force
+```
+
 
 Multiple SSH Keys settings for different github account
 https://gist.github.com/jexchan/2351996
