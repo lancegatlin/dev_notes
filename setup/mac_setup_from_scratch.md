@@ -65,8 +65,8 @@
 	1. clone dev_notes
 		1. git@github.com:lancegatlin/dev_notes.git
 	2. clone other notes as needed
-10. install gpg/pass
-	1. brew install gpg
+	3. install gpg/pass
+	4. brew install gpg
 		1. generate new key: `gpg --full-generate-key`
 			1. default kind of key (sign/encrypt)
 			2. default curve
@@ -76,6 +76,10 @@
 ```
 default-cache-ttl 5400
 max-cache-ttl 5400
+# enable one of these to disable GUI modal for password entry
+#pinentry-program /usr/bin/pinentry-tty
+#pinentry-program /usr/bin/pinentry
+#pinentry-program /usr/bin/pinentry-curses
 ```
 	2. brew install pass
 		1. init password store: `pass init <gpg key hex id>`
