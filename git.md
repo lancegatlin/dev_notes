@@ -65,7 +65,7 @@ Note: If you only have access to legacy Git, use `git filter-branch --subdirecto
 1. Navigate to your existing target repository: `cd ../target-repo`
 2. Add the temporary repo as a remote: `git remote add migration-source ../temp-repo`
 3. Fetch the history: `git fetch migration-source`
-4. Merge the history into your current branch. You must use a special flag because the repositories have no common ancestor: `git merge migration-source/main --allow-unrelated-histories`
+4. Merge the history into your current branch. You must use a special flag because the repositories have no common ancestor: `git merge migration-source/master --allow-unrelated-histories`
 5. Clean up: `git remote remove migration-source` `rm -rf ../temp-repo`
 
 #### Phase 3: Finalize Source Repository

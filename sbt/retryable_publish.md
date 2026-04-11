@@ -4,3 +4,4 @@
 sbt -Dsbt.repository.publish.attempts=20 publish
 ```
 
+also see publish overwrite
