@@ -1,3 +1,8 @@
+force push to bypass branch protection rules:
+```declarative
+git push https://<BOT USER>:<PAT>@github.com/<org>/<repo>.git <default branch> --force
+```
+
 quick rebase
 ```
 git fetch; git rebase origin/{defaultBranch} --autostash
@@ -31,6 +36,11 @@ git config core.sshCommand "ssh -i ~/.ssh/id_rsa_example -F /dev/null"
 ### git with PAT
 
 https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/creating-and-using-a-git-pat
+
+Reject stored creds
+```
+echo "url=https://github.com" | git credential reject
+```
 
 To enable keychain storing of PAT after first login
 ```
