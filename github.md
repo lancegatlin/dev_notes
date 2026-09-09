@@ -1,3 +1,14 @@
+Test PATs
+```
+% curl -s -H "Authorization: Bearer $TEST_PAT" https://api.github.com/user | grep login
+  "login": "gatlil3_cat",
+%
+% echo $TEST_PAT | gh auth login --with-token
+```
+
+```
+git clone https://x-access-token:${TEST_PAT}@github.com/${TEST_REPO}.git
+```
 
 Discovering run-id for a check in gh
 https://github.com/cli/cli/issues/3558#issuecomment-1426779325

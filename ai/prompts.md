@@ -2,8 +2,12 @@
 ```
 please review all staged changes -- please slice changes into a series of logical commits to reduce the size of any
 individual commit -- each commit should be merge-able & valid on its own (i.e. no broken slices) -- give each commit a
-one line summary that starts with 'AB#2911510: ...' -- these commits will be used to slice this PR into smaller PRs more
-easily reviewed
+one line summary that starts with 'AB#2929606: ...' -- these commits will be used to slice this PR into smaller PRs more
+easily reviewed -- if a commit is dependent on prior commits to be a valid merge, add a list of 8 char prefix depedent
+commit shas to the description
+
+based on these slices -- please group commits and recommend a sequence of PRs that keep reviews med-large -- and have a
+clear purpose/narrative avoid changing too much at the same time -- no changes right now
 ```
 
 ```

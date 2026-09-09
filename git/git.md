@@ -1,3 +1,11 @@
+testing bot PAT
+```
+git clone https://<bot-username>:<PAT>@github.com/<owner>/<repo>.git
+
+git clone https://stingraydevops:${TEST_PAT}@github.com/${TEST_REPO}.git
+```
+
+
 force push to bypass branch protection rules:
 ```declarative
 git push https://<BOT USER>:<PAT>@github.com/<org>/<repo>.git <default branch> --force
